@@ -48,8 +48,9 @@
 
 #chant {
 	float: left;
-	width: 1.7rem;
-	height: 1.3rem;
+	width: 1.87rem;
+	height: 1.43rem;
+	border:0.5px solid blue;
 	margin-left: 0.31rem;
 	margin-top: -0.5rem;
 	margin-bottom: 0.5rem;
