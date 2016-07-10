@@ -4,21 +4,21 @@ $(document).ready(function() {
 			$("#get_IDCode").click(function(e) {
 				var code = codeGen();
 				$("msg").val("");
-				$("#icon-name").attr("style", "width:0.6rem; height:0.6rem; background-color:white;");
-				$("#icon-phone").attr("style", "width:0.6rem; height:0.6rem; background-color:white;");
+				$("#icon-name").attr("style", "width:0.46rem; height:0.46rem; background-color:white;");
+				$("#icon-phone").attr("style", "width:0.46rem; height:0.46rem; background-color:white;");
 				//信息完整性验证
 				if ($("#name").val() == "") {
 					$("#name").val("");
-					$("#icon-name").attr("style", "width:0.6rem; height:0.6rem; background-color:red;");
+					$("#icon-name").attr("style", "width:0.46rem; height:0.46rem; background-color:red;");
 					$("#name").attr("placeholder","请输入姓名");
 					e.preventDefault();
 				} else if ($("#phone").val() == "") {
 					$("#phone").val("");
-					$("#icon-phone").attr("style", "width:0.6rem;height:0.6rem;background-color:red;");
+					$("#icon-phone").attr("style", "width:0.46rem;height:0.46rem;background-color:red;");
 					$("#phone").attr("placeholder", "请输入手机号");
 					e.preventDefault();
 				} else if( !(/^1[3|4|5|7|8]\d{9}$/.test($("#phone").val())) ) { 
-			        $("#icon-phone").attr("style", "width:0.6rem;height:0.6rem;background-color:red;");
+			        $("#icon-phone").attr("style", "width:0.46rem;height:0.46rem;background-color:red;");
 			        $("#phone").val("");
 			        $("#phone").attr("placeholder", "您输入的手机号码有误");
 			        e.preventDefault(); 
