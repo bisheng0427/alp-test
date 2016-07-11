@@ -21,7 +21,7 @@
 								
 					</div>
 				</div>
-				<button type="button" class="btn btn-danger" style="font-size:0.13rem;float:right;margin-top:-0.2rem;" onclick="history.go(-1)">返<br />回</button>
+				<button id="return" type="button" class="btn btn-danger" style="font-size:0.13rem;float:right;margin-top:-0.2rem;" onclick="history.go(-1)">返<br />回</button>
 				<div id="award-intro">
 							
 				</div>
@@ -29,7 +29,12 @@
 		</div>
 		<script src="stylesheets/mui.min.js"></script>
 		<script type="text/javascript">
-			mui.init()
+			mui.init();
+			$(window).scroll(function(e) {
+				var top = window.scrollY;
+				console.log($("#return")[0].style.top)
+				$("#return")[0].style.marginTop = top+"px";
+			});
 		</script>
 	</body>
 
