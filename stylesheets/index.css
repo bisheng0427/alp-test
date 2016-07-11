@@ -83,7 +83,6 @@ body {
 }
 
 #enroll-content-section {
-	border:0.5px solid blue;
 	width: 3.87rem;
 	height: 5.7rem;
 	background-image: url(../stylesheets/img/alp-bg02.png);
@@ -182,7 +181,6 @@ body {
 }
 
 #logo2 {
-	
 	margin-left: 1.38rem;
 	width: 1.15rem;
 	height: 0.62rem;
@@ -262,7 +260,6 @@ body {
 
 #award-content-section {
 	width: 3.8265rem;
-	height: 5.72rem;
 	background-image: url(../stylesheets/img/alp-bg05.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -271,7 +268,7 @@ body {
 #award-intro {
 	margin-left: 0rem;
 	width: 3.6rem;
-	height: 4.31rem;
+	height: 4.3rem;
 	background-image: url(../stylesheets/img/award-intro.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
