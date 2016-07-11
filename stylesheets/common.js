@@ -1,8 +1,10 @@
 $(document).ready(function() { 
 			//点击获取验证码
 			//console.log(code);
+			var code;
 			$("#get_IDCode").click(function(e) {
-				var code = codeGen();
+				code = codeGen();
+				console.log(code);
 				$("msg").val("");
 				$("#icon-name").attr("style", "width:0.46rem; height:0.46rem; background-color:white;");
 				$("#icon-phone").attr("style", "width:0.46rem; height:0.46rem; background-color:white;");
@@ -67,14 +69,16 @@ $(document).ready(function() {
 			});
 			
 			$("#submit").click(function(e) {
+				console.log(code);
 				if ($("#IDCode").val() == "") {
-					$("msg").val("验证码不能为空");
+					$("#msg").val("验证码不能为空");
+					
 				} else {
 					var code_input = $("#IDCode").val();
 					if (code_input == code) {
 						window.location.href = "enroll_sucess.html";
 					} else {
-						$("msg").val("验证码错误");
+						$("#msg").val("验证码错误");
 					}
 					e.preventDefault();
 				}
