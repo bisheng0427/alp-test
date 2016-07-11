@@ -84,16 +84,6 @@ $(document).ready(function() {
 				}
 				
 			});
-
-			$("#name").click(function(e) {
-				e.preventDefault();
-			});
-			$("#phone").click(function(e) {
-				e.preventDefault();
-			});
-			$("#IDCode").click(function(e) {
-				e.preventDefault();
-			});
 			
 			function codeGen () {
 				var Num = ""; 
