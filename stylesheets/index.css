@@ -1,4 +1,6 @@
-
+body {
+	background-image: url(img/apl-bg.png);
+}
 
 #main-container {
 	width: 100%;
@@ -30,12 +32,12 @@
 
 #logo-section1 {
 	width: 100%;
-	height: 15%;
+	height: 20%;
 }
 
 #logo {
-	width: 100%;
-	height: 60%;
+	width: 104%;
+	height: 65%;
 	background-image: url(../stylesheets/img/alp-logo.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -52,7 +54,6 @@
 	width: 33%;
 	height: 30%;
 	margin-left: 0.31rem;
-	margin-top: 0px;
 	margin-bottom: 5%;
 	background-image: url(../stylesheets/img/alp-chant.png);
 	background-repeat: no-repeat;
@@ -81,16 +82,20 @@
 }
 
 #enroll-content-section {
-	width: 3.87rem;
-	height: 5.7rem;
+	width: 100%;
+	height: 4.76rem;
 	background-image: url(../stylesheets/img/alp-bg02.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
 
 #enroll-section {
-	width: 3.87rem;
-	height: 4.7rem;
+	width: 100%;
+	height: 80%;
+}
+
+.input-group {
+	margin-top:5%;
 }
 
 #icon-name {
@@ -111,34 +116,34 @@
 	background-size: 100% 100%;
 }
 
+
 #name,#phone {
-	width: 2.7rem;
-	height: 0.46rem;
+	width:115%;
+	height:0.46rem;
 	font-size: 0.13rem;
 	font-family: "Microsoft YaHei";
-	border-left: 0px;
 }
 
 
 #IDCode {
-	width: 1.23rem;
+	width: 1rem;
 	height: 0.46rem;
 	border-left: 0px;
-	font-size: 0.13rem;
+	font-size: 0.1rem;
 	font-family: "Microsoft YaHei";
 }
 
 #get_IDCode{
 	margin-left: 0.08rem;
-	width: 1.38rem;
+	width: 0.95rem;
 	height: 0.46rem;
 	font-size: 0.13rem;
 	font-family: "Microsoft YaHei";
 }
 
 #submit{
-	margin-left: 0.31rem;
-	width: 3.14rem;
+	width: 80%;
+	margin-left:10%;
 	height: 0.46rem;
 	font-size: 0.13rem;
 	font-family: "Microsoft YaHei";
@@ -149,11 +154,10 @@
 }
 
 #more-info2 {
-	margin-right: 0px;
 	float: right;
 	width: 0.31rem;
 	height: 2rem;
-	margin-top: -4.46rem;
+	margin-top: -112%;
 }
 
 #msg {
@@ -164,23 +168,23 @@
 }
 
 #enroll-content-section2 {
-	width: 3.8265rem;
-	height: 5.7rem;
+	width: 100%;
+	height: 4.76rem;
 	background-image: url(../stylesheets/img/alp-bg03.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
 
 #logo-content {
-	padding-top:0.23rem;
 	height: 1.076rem;
-	width: 3.8265rem;
+	width: 100%;
+	padding-top:0.3rem;
 
 }
 
 #logo2 {
 	
-	margin-left: 1.38rem;
+	margin-left: 33%;
 	width: 1.15rem;
 	height: 0.62rem;
 	background-image: url(../stylesheets/img/alp-logo2.png);
@@ -195,7 +199,7 @@
 }
 
 #success-icon {
-	margin-left: 1.46rem;
+	margin-left: 35%;
 	margin-top : 0.07rem;
 	width : 0.95rem;
 	height: 1.2rem;
@@ -206,7 +210,7 @@
 
 #success-text {
 	margin-top: 0.19rem;
-	margin-left: 1.307rem;
+	margin-left: 29%;
 	width: 1.315rem;
 	height: 0.4rem;
 	background-image: url(../stylesheets/img/alp-success-text.png);
@@ -215,15 +219,14 @@
 }
 
 #success-illustration {
-	height: 2.46rem;
-	width: 3.8265rem;
+	height: 2.1rem;
+	width: 100%;
 
 }
 
 #success-illustration-text {
-	margin-left: 0.7rem;
-	margin-top: 0.07rem;
-	width : 2.54rem;
+	margin-left:12%;
+	width : 2.44rem;
 	height: 1.25rem;
 	background-image: url(../stylesheets/img/alp-success-illustration.png);
 	background-repeat: no-repeat;
@@ -232,8 +235,8 @@
 
 #close {
 	margin-top: 0.23rem;
-	margin-left: 0.34rem;
-	width  : 3.15rem;
+	margin-left: 10%;
+	width  : 80%;
 	height : 0.46rem;
 	background-color: lightgrey;
 	font-size: 0.13rem;
@@ -241,24 +244,24 @@
 }
 
 #illustration-content-section {
-	width : 3.8265rem;
-	height: 15.38rem;
+	width : 100%;
+	height: 13.5rem;
 	background-image: url(../stylesheets/img/apl-bgl04.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
 
 #illustration-content {
-	margin-left: 0.32rem;
-	width : 3.19rem;
-	height: 13.85rem;
+	margin-left: 5%;
+	width : 85%;
+	height: 88%;
 	background-image: url(../stylesheets/img/alp-illustration.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
 
 #award-content-section {
-	width: 3.8265rem;
+	width: 100%;
 	height: 6.1rem;
 	background-image: url(../stylesheets/img/alp-bg05.png);
 	background-repeat: no-repeat;
@@ -266,9 +269,9 @@
 }
 
 #award-intro {
-	margin-top:-0.05rem;
-	margin-left: 0.1rem;
-	width: 3.6rem;
+	margin-top:5%;
+
+	width: 100%;
 	height: 4.31rem;
 	background-image: url(../stylesheets/img/award-intro.png);
 	background-repeat: no-repeat;
