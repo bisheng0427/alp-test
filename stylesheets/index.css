@@ -1,8 +1,10 @@
+body {
+	background-image: url(../stylesheets/img/apl-bg.png)
+}
 
 #main-container {
 	width: 3.8265rem;
 	height: 5.7rem;
-	background-image: url(../stylesheets/img/apl-bgl04.png);
 }
 
 #index-content-section {
@@ -81,7 +83,8 @@
 }
 
 #enroll-content-section {
-	width: 3.8265rem;
+	border:0.5px solid blue;
+	width: 3.87rem;
 	height: 5.7rem;
 	background-image: url(../stylesheets/img/alp-bg02.png);
 	background-repeat: no-repeat;
@@ -89,7 +92,7 @@
 }
 
 #enroll-section {
-	width: 3.8265rem;
+	width: 3.87rem;
 	height: 4.7rem;
 }
 
