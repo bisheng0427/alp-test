@@ -3,8 +3,7 @@ $(document).ready(function() {
 			//console.log(code);
 			var code;
 			$("#get_IDCode").click(function(e) {
-				code = codeGen();
-				console.log(code);
+				
 				$("msg").val("");
 				$("#icon-name").attr("style", "width:0.46rem; height:0.46rem; background-color:white;");
 				$("#icon-phone").attr("style", "width:0.46rem; height:0.46rem; background-color:white;");
@@ -26,6 +25,7 @@ $(document).ready(function() {
 			        e.preventDefault(); 
 			    } 
 				else {
+					code = codeGen();
 					var count = 60;
 					var name = $("#name").val().toString();
 					var phone = $("#phone").val().toString();
@@ -43,23 +43,23 @@ $(document).ready(function() {
 						//jsonp:'callback',
 						success: function(data) {
 							if (data.code == "success") {
-								$("msg").val("获取验证码成功");
+								$("#msg").val("获取验证码成功");
 							} else  {
-								$("msg").val("获取验证码失败");
+								$("#msg").val("获取验证码失败");
 							}
 						},
 						error: function(err) {
-							$("msg").val("获取验证码发生错误");
+							$("#msg").val("获取验证码发生错误");
 						}
 					});
 					//获取验证码按钮倒计时
-					$("#get_IDCode").attr('class', 'disabled');
+					$("#get_IDCode").attr('disabled', true);
 					var t = setInterval(function() {
 						count--;
-						$("#get_IDCode").text("重新获取验证码("+count+"秒)");
+						$("#get_IDCode").text("获取验证码("+count+"秒)");
 						if(count <= 0) {
-							clearInterval(t);
-							$("#get_IDCode").attr('class', 'btn btn-danger');
+							clearInterval(t);2
+							$("#get_IDCode").attr('disabled', false);
 							$("#get_IDCode").text("获取验证码");
 						}
 					},1000);
@@ -69,18 +69,30 @@ $(document).ready(function() {
 			});
 			
 			$("#submit").click(function(e) {
-				console.log(code);
-				if ($("#IDCode").val() == "") {
-					$("#msg").val("验证码不能为空");
-					
-				} else {
-					var code_input = $("#IDCode").val();
-					if (code_input == code) {
-						window.location.href = "enroll_sucess.html";
-					} else {
-						$("#msg").val("验证码错误");
-					}
+				if(!code) {
+					$("#icon-check").attr("style", "width:0.46rem;height:0.46rem;background-color:red;");
+			        $("#IDCode").val("");
+			        $("#IDCode").attr("placeholder", "请先获取验证码");
 					e.preventDefault();
+				} else {
+					if ($("#IDCode").val() == "") {
+						$("#icon-check").attr("style", "width:0.46rem;height:0.46rem;background-color:red;");
+				        $("#IDCode").val("");
+				        $("#IDCode").attr("placeholder", "验证码不能为空");
+						e.preventDefault();
+					} else {
+						var code_input = $("#IDCode").val();
+						if (code_input == code) {
+							window.location.href = "enroll_sucess.html";
+						} else {
+							console.log("ss");
+							$("#icon-check").attr("style", "width:0.46rem;height:0.46rem;background-color:red;");
+					        $("#IDCode").val("");
+					        $("#IDCode").attr("placeholder", "验证码错误");
+							e.preventDefault();
+						}
+						e.preventDefault();
+					}
 				}
 				
 			});
